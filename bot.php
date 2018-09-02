@@ -78,12 +78,7 @@ if(!is_null($events)){
         new MessageTemplateActionBuilder(
             'รายละเอียด',// ข้อความแสดงในปุ่ม
             'bw30' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-        )
-     $actionBuilder2 = array(
-        new MessageTemplateActionBuilder(
-            'รายละเอียดสินค้า',// ข้อความแสดงในปุ่ม
-            'bw60' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-        )
+        ),
         /*new UriTemplateActionBuilder(
             'Uri Template', // ข้อความแสดงในปุ่ม
             'https://www.ninenik.com'
@@ -116,7 +111,7 @@ if(!is_null($events)){
                 new CarouselColumnTemplateBuilder(
                     'Title Carousel',
                     'Description Carousel',
-                    'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                    'https://gdurl.com/2Y4n',
                     $actionBuilder
                 ),                                          
             )
