@@ -72,14 +72,14 @@ if(!is_null($events)){
                         $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                         break;          
               
-    case "t_c":
+    case "เลือกรายการสินค้า":
     // กำหนด action 4 ปุ่ม 4 ประเภท
     $actionBuilder = array(
         new MessageTemplateActionBuilder(
-            'Message Template',// ข้อความแสดงในปุ่ม
-            'This is Text' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'bw30' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),
-        new UriTemplateActionBuilder(
+        /*new UriTemplateActionBuilder(
             'Uri Template', // ข้อความแสดงในปุ่ม
             'https://www.ninenik.com'
         ),
@@ -91,21 +91,21 @@ if(!is_null($events)){
                 'item'=>100
             )), // ข้อมูลที่จะส่งไปใน webhook ผ่าน postback event
             'Postback Text'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-        ),      
+        ),*/      
     );
     $replyData = new TemplateMessageBuilder('Carousel',
         new CarouselTemplateBuilder(
             array(
                 new CarouselColumnTemplateBuilder(
-                    'Title Carousel',
-                    'Description Carousel',
-                    'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                    'ราวจับกันลื่น',
+                    'I SHAPE 30 (BW30)',
+                    'https://gdurl.com/2Y4n',
                     $actionBuilder
                 ),
                 new CarouselColumnTemplateBuilder(
-                    'Title Carousel',
-                    'Description Carousel',
-                    'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                    'ราวจับกันลื่น',
+                    'I SHAPE 60 (BW60)',
+                    'https://gdurl.com/2Y4n',
                     $actionBuilder
                 ),
                 new CarouselColumnTemplateBuilder(
