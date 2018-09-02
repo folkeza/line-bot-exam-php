@@ -150,7 +150,7 @@ if(!is_null($events)){
             'Postback Text'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),*/      
     );
-    $imageUrl = 'https://gdurl.com/qETK';
+    $imageUrl = 'https://gdurl.com/OkqN';
     $replyData = new TemplateMessageBuilder('Button Template',
         new ButtonTemplateBuilder(
                 'DECORA CARE', // กำหนดหัวเรื่อง
