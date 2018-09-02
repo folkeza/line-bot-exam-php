@@ -67,8 +67,8 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
     case "i":
-                        $picFullSize = 'https://bydecora.com/wp-content/uploads/2017/11/Info-graphic3-1024x592.png';
-                        $picThumbnail = 'https://bydecora.com/wp-content/uploads/2017/11/Info-graphic3-1024x592.png';
+                        $picFullSize = 'https://drive.google.com/open?id=1tn4gOf-asuEXuHig3G9x0hhLOVlf2pQA';
+                        $picThumbnail = 'https://drive.google.com/open?id=1tn4gOf-asuEXuHig3G9x0hhLOVlf2pQA';
                         $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                         break;          
               
@@ -150,7 +150,7 @@ if(!is_null($events)){
             'Postback Text'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),*/      
     );
-    $imageUrl = 'https://bydecora.com/wp-content/uploads/2017/11/Info-graphic3-1024x592.png';
+    $imageUrl = 'https://drive.google.com/open?id=1tn4gOf-asuEXuHig3G9x0hhLOVlf2pQA';
     $replyData = new TemplateMessageBuilder('Button Template',
         new ButtonTemplateBuilder(
                 'DECORA CARE', // กำหนดหัวเรื่อง
