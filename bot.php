@@ -79,6 +79,11 @@ if(!is_null($events)){
             'รายละเอียด',// ข้อความแสดงในปุ่ม
             'bw30' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),
+     $actionBuilder2 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียดสินค้า',// ข้อความแสดงในปุ่ม
+            'bw60' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
         /*new UriTemplateActionBuilder(
             'Uri Template', // ข้อความแสดงในปุ่ม
             'https://www.ninenik.com'
@@ -106,7 +111,7 @@ if(!is_null($events)){
                     'ราวจับกันลื่น',
                     'I SHAPE 60 (BW60)',
                     'https://gdurl.com/2Y4n',
-                    $actionBuilder
+                    $actionBuilder2
                 ),
                 new CarouselColumnTemplateBuilder(
                     'Title Carousel',
