@@ -66,6 +66,12 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
+    case "i":
+                        $picFullSize = 'https://bydecora.com/wp-content/uploads/2017/11/Info-graphic3-1024x592.png';
+                        $picThumbnail = 'https://bydecora.com/wp-content/uploads/2017/11/Info-graphic3-1024x592.png';
+                        $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                        break;          
+              
     case "t_c":
     // กำหนด action 4 ปุ่ม 4 ประเภท
     $actionBuilder = array(
