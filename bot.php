@@ -108,11 +108,11 @@ if(!is_null($events)){
                     'https://gdurl.com/2Y4n',
                     $actionBuilder
                 ),
-                new CarouselColumnTemplateBuilder02(
+                new CarouselColumnTemplateBuilder(
                     'ราวจับกันลื่น',
                     'I SHAPE 60 (BW60)',
                     'https://gdurl.com/2Y4n',
-                    $actionBuilder
+                    $actionBuilder02
                 ),
                 new CarouselColumnTemplateBuilder(
                     'Title Carousel',
