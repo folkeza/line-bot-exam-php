@@ -79,10 +79,10 @@ if(!is_null($events)){
             'รายละเอียด',// ข้อความแสดงในปุ่ม
             'bw30' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),
-        new UriTemplateActionBuilder02(
+       /* new UriTemplateActionBuilder(
             'Uri Template', // ข้อความแสดงในปุ่ม
             'https://www.ninenik.com'
-        ),
+        ),*/
         /*new PostbackTemplateActionBuilder(
             'Postback', // ข้อความแสดงในปุ่ม
             http_build_query(array(
@@ -93,6 +93,12 @@ if(!is_null($events)){
             'Postback Text'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),*/      
     );
+    $actionBuilder02 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'bw60' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     );
     $replyData = new TemplateMessageBuilder('Carousel',
         new CarouselTemplateBuilder(
             array(
