@@ -66,11 +66,11 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
-    case "i":
-                        $picFullSize = 'https://drive.google.com/open?id=1tn4gOf-asuEXuHig3G9x0hhLOVlf2pQA';
-                        $picThumbnail = 'https://drive.google.com/open?id=1tn4gOf-asuEXuHig3G9x0hhLOVlf2pQA';
+    case "คุณสมบัติสินค้า":
+                        $picFullSize = 'https://gdurl.com/8LLw';
+                        $picThumbnail = 'https://gdurl.com/8LLw';
                         $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-                        break;          
+    break;          
               
     case "เลือกรายการสินค้า":
     // กำหนด action 4 ปุ่ม 4 ประเภท
@@ -224,7 +224,7 @@ if(!is_null($events)){
         ),
         new MessageTemplateActionBuilder(
             'คุณสมบัติสินค้า',// ข้อความแสดงในปุ่ม
-            'ภาพคุณสมบัติ' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+            'คุณสมบัติสินค้า' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),
        new MessageTemplateActionBuilder(
             'วิธีการสั่งซื้อ',// ข้อความแสดงในปุ่ม
