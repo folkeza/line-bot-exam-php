@@ -79,11 +79,11 @@ if(!is_null($events)){
             'รายละเอียด',// ข้อความแสดงในปุ่ม
             'bw30' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),
-        /*new UriTemplateActionBuilder(
+        new UriTemplateActionBuilder02(
             'Uri Template', // ข้อความแสดงในปุ่ม
             'https://www.ninenik.com'
         ),
-        new PostbackTemplateActionBuilder(
+        /*new PostbackTemplateActionBuilder(
             'Postback', // ข้อความแสดงในปุ่ม
             http_build_query(array(
                 'action'=>'buy',
@@ -102,11 +102,11 @@ if(!is_null($events)){
                     'https://gdurl.com/2Y4n',
                     $actionBuilder
                 ),
-                new CarouselColumnTemplateBuilder(
+                new CarouselColumnTemplateBuilder02(
                     'ราวจับกันลื่น',
                     'I SHAPE 60 (BW60)',
                     'https://gdurl.com/2Y4n',
-                    $actionBuilder02
+                    $actionBuilder
                 ),
                 new CarouselColumnTemplateBuilder(
                     'Title Carousel',
