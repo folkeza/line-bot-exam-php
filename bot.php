@@ -99,6 +99,54 @@ if(!is_null($events)){
             'bw60' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
         ),
      );
+     $actionBuilder03 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'bw4070' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     ); 
+     $actionBuilder04 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'bw5050' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     ); 
+     $actionBuilder05 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'BWT6075' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     ); 
+     $actionBuilder06 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'BW2060' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     );
+     $actionBuilder07 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'BW50102' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     );
+     $actionBuilder08 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'BW4145' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     );
+     $actionBuilder09 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'BW4040' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     );
+     $actionBuilder10 = array(
+        new MessageTemplateActionBuilder(
+            'รายละเอียด',// ข้อความแสดงในปุ่ม
+            'BWP6075' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+        ),
+     );         
     $replyData = new TemplateMessageBuilder('Carousel',
         new CarouselTemplateBuilder(
             array(
@@ -111,15 +159,57 @@ if(!is_null($events)){
                 new CarouselColumnTemplateBuilder(
                     'ราวจับกันลื่น',
                     'I SHAPE 60 (BW60)',
-                    'https://gdurl.com/2Y4n',
+                    'https://gdurl.com/dDdx',
                     $actionBuilder02
                 ),
                 new CarouselColumnTemplateBuilder(
-                    'Title Carousel',
-                    'Description Carousel',
-                    'https://gdurl.com/2Y4n',
-                    $actionBuilder
-                ),                                          
+                    'ราวจับกันลื่น',
+                    'L SHAPE (BW4070)',
+                    'https://gdurl.com/qbxV',
+                    $actionBuilder03
+                ),
+               new CarouselColumnTemplateBuilder(
+                    'ราวจับกันลื่น',
+                    'ติดผนังเข้ามุม (BW5050)',
+                    'https://gdurl.com/XX6y',
+                    $actionBuilder04
+                ),
+               new CarouselColumnTemplateBuilder(
+                    'ราวจับกันลื่น',
+                    'T SHAPE (BWT6075)',
+                    'https://gdurl.com/4MgB',
+                    $actionBuilder05
+                ),
+                new CarouselColumnTemplateBuilder(
+                    'ราวจับกันลื่น',
+                    'แบบพับเก็บเข้าผนัง (BW2060)',
+                    'https://gdurl.com/3OMu',
+                    $actionBuilder06
+                ),
+                new CarouselColumnTemplateBuilder(
+                    'ราวจับกันลื่น',
+                    'L SHAPE ฝักบัว (BW50102)',
+                    'https://gdurl.com/vBcS',
+                    $actionBuilder07
+                ),
+                new CarouselColumnTemplateBuilder(
+                    'เก้าอี้นั่งอาบน้ำ',
+                    'พับเก็บติดผนัง (BW4145)',
+                    'https://gdurl.com/zTj1',
+                    $actionBuilder08
+                ),
+                new CarouselColumnTemplateBuilder(
+                    'ราวจับกันลื่น',
+                    'V SHAPE (BW4040)',
+                    'https://gdurl.com/dNzI',
+                    $actionBuilder09
+                ),
+                new CarouselColumnTemplateBuilder(
+                    'ราวจับกันลื่น',
+                    'P SHAPE (BWP6075)',
+                    'https://gdurl.com/z3L4',
+                    $actionBuilder10
+                ),
             )
         )
     );
